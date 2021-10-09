@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <script src="eas.js" defer></script>
+        <title>Etch-a-Sketch</title>
+    </head>
+    <body>
+        <div class="buttons">
+            <button class="clear">Clear</button>
+
+            <div class="separator" id="gridsize">Grid size</div>
+            <button class="setgrid" data-gridsize=10>10x10</button>
+            <button class="setgrid" data-gridsize=16>16x16</button>
+            <button class="setgrid" data-gridsize=24>24x24</button>
+
+            <div class="sliderContainer">
+                <div class="sliderValues">1x1</div>
+                <input id="sizeSlider" type="range" min="1" max="48" value="1">
+            </div>
+            
+            <div class="separator" id="colormode">Color mode</div>
+            <button class="setcolor" data-sqcolor="black">Black</button>
+            <button class="setcolor" data-sqcolor="rainbow">Rainbow</button>
+            <button class="setcolor" data-sqcolor="userpick">Pick: <input type="color" name="colorpicker" data-sqcolor="userpick"></button>
+        </div>
+
+        <main>
+        <div class="wrap">
+            <div class="title">Etch-a-Sketch</div>
+            <div id="gridcontainer" class="grid"></div>
+            <div class="bottom">
+                <div class="knobs"></div>
+                <div class="knobs"></div>
+            </div>
+        </div>
+
+        <div class="footer">Built by: kokairi</div>
+        </main>
+    </body>
+</html>
